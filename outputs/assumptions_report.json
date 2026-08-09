@@ -1,0 +1,78 @@
+{
+  "r_squared": 0.83275982974256,
+  "adj_r_squared": 0.8275062118287138,
+  "f_pvalue": 4.19467335571396e-140,
+  "coefficients": {
+    "const": 0.5834,
+    "G1": 0.1856,
+    "G2": 0.9578,
+    "failures": -0.2348,
+    "studytime": -0.1929,
+    "absences": 0.04,
+    "Medu": 0.1056,
+    "Fedu": -0.1607,
+    "age": -0.1461,
+    "goout": 0.092,
+    "higher_bin": 0.2048,
+    "internet_bin": -0.2313,
+    "schoolsup_bin": 0.4105
+  },
+  "p_values": {
+    "const": 0.7202,
+    "G1": 0.0014,
+    "G2": 0.0,
+    "failures": 0.1157,
+    "studytime": 0.1069,
+    "absences": 0.0014,
+    "Medu": 0.3663,
+    "Fedu": 0.1653,
+    "age": 0.0858,
+    "goout": 0.3026,
+    "higher_bin": 0.6643,
+    "internet_bin": 0.3874,
+    "schoolsup_bin": 0.1845
+  },
+  "linearity_rainbow_test": {
+    "stat": 1.2000406510171835,
+    "p_value": 0.10499847923676503,
+    "interpretation": "p>0.05 fails to reject linearity"
+  },
+  "normality": {
+    "shapiro_stat": 0.787624554422242,
+    "shapiro_p": 2.4992477854354936e-22,
+    "jarque_bera_stat": 1169.0221001516616,
+    "jarque_bera_p": 1.4127858632961746e-254,
+    "skew": -2.272922241465216,
+    "kurtosis": 10.096794264476165,
+    "interpretation": "p<0.05 => reject normality of residuals"
+  },
+  "homoscedasticity_breusch_pagan": {
+    "lm_stat": 46.086992604303276,
+    "lm_p": 6.702942648413595e-06,
+    "interpretation": "p<0.05 => reject homoscedasticity (heteroscedastic)"
+  },
+  "vif": {
+    "const": 288.94,
+    "G1": 4.01,
+    "G2": 3.89,
+    "failures": 1.33,
+    "studytime": 1.09,
+    "absences": 1.08,
+    "Medu": 1.78,
+    "Fedu": 1.72,
+    "age": 1.27,
+    "goout": 1.07,
+    "higher_bin": 1.17,
+    "internet_bin": 1.08,
+    "schoolsup_bin": 1.17
+  },
+  "durbin_watson": {
+    "stat": 1.8744592212411757,
+    "interpretation": "~2 => no autocorrelation (caveat: no natural ordering in this cross-sectional data, test kept for completeness)"
+  },
+  "influential_points": {
+    "threshold_4_over_n": 0.010126582278481013,
+    "n_flagged": 31,
+    "pct_flagged": 7.85
+  }
+}
